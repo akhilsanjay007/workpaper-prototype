@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowLeft, FileSearch, Scale } from "lucide-react";
+import { AgentAssist } from "@/components/agent-assist";
 import { BasisAdjustForm } from "@/components/basis-adjust-form";
 import { DueDiligenceForm } from "@/components/due-diligence-form";
 import { ItemActions } from "@/components/item-actions";
@@ -126,6 +127,8 @@ export default async function OpenItemPage({
       {gift && typeof gift.value === "number" ? (
         <LowConfidenceForm documentId={gift.document_id} readAmount={gift.value} />
       ) : null}
+
+      <AgentAssist code={diagnostic.code} />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <NoteForm code={diagnostic.code} />

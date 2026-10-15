@@ -37,3 +37,5 @@ The header switches the person you are working as.
 Filing stays blocked until warnings are cleared, due diligence is done, review notes are closed, and preparer, reviewer, and partner have signed. The banner then reads **Ready for client approval**. Ngozi approves the return at `/client`, which changes the banner to **Client approved — ready to e-file**. **E-file return** is only available after that approval. A short simulation then shows **E-filed successfully**, an acknowledgment number, and locks further notes and adjustments. The review and client pages show the same path as Review, Client approval, then E-file.
 
 The packet is `data/okafor_lindqvist_2025_packet.json`. Return figures come from version v3.
+
+On an open item, **Explain this issue** and **Draft client question** show a prepared draft. Nothing is saved until **Use as note**.
